@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Task1</title>
+    <title>Weather App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +9,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
-    <%= yield %>
+    <header>
+    </header>
+    <div class="container rounded my-3 py-1 bg-white">
+      <div class="row">
+        <div class="col">
+        <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
